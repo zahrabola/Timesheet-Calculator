@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zahra's - TimeSheet Calculator </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/styles.css" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
+
 <body>
     <div>
-<h1>Hello</h1>
+        <h1>Hello</h1>
+        <div class="container">
+            <header class="person">
+                <div class="person-avatar"></div>
+                <div class="person-name">Zahra O</div>
+            </header>
+
+            <section class="tableheader">
+                <input type="text" class="orange" value="Days" disabled/>
+                <input type="text" class="blue" value="Start Work" disabled />
+                <input type="text" class="green" value="Start Break" disabled />
+                <input type="text" class="green" value="End Break" disabled />
+                <input type="text" class="blue" value="End Work" disabled />
+                <input type="text" class="purple" value="Hours / Days" disabled />
+            </section>
+
+            <section class="tableBody">
+                <div class="tr">
+                    <form>
+                        <th>
+                            <input type="text" class="orange" placeholder="Enter Days" />
+                        </th>
+                        <td>
+                            <input type="time" class="green" id="start-work" />  
+                        </td>
+                        <td>
+                            <input type="time" class="blue" id="start-break" />  
+                        </td>
+                        <td>
+                            <input type="time" class="blue" id="end-break" />  
+                        </td>
+                        <td>
+                            <input type="time" class="green" id="end-break" />  
+                        </td>
+                        <td>
+                            <input  class="purple wordkedhours" value="00:00" disabled/>  
+                        </td>
+                        <td>
+                           <button class="buttonadd" type="submit"> add </button> 
+                        </td>
+                    </form>
+
+                </div>
+                <div class="tr">2</div>
+                <div class="tr">3</div>
+                <div class="tr">4</div>
+                <div class="tr">5</div>
+                <div class="tr">6</div>
+                <div class="tr">7</div>
+            </section>
+
+            <section class="tablefooter">
+
+                <input class="red" value="total" disabled/>
+
+                <input id="totalworkhours" type="text" class="red" value="workhours" disabled/>  
+            </section>
+        </div>
+
     </div>
 
     <script src="src/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
